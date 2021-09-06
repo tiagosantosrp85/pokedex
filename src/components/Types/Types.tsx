@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-  Background,
-  Container,
-  Content,
-  Pokemon,
-} from './styles';
-import InputSelect from '../../components/InputSelect';
+import { Container, Content, Pokemon } from './styles';
+import Collapse from '../../components/Collapse';
 import Pokemons from '../../mocks';
 
 const Types: React.FC = () => {
@@ -15,9 +10,10 @@ const Types: React.FC = () => {
       <Content>
         {Pokemons.map(item => (
           <div key={item.id}>
-            <Pokemon src={item.image} />
-            <Background src={item.background} />
-            <InputSelect id={item.id} skills={item.skills} />
+            <Pokemon type={item.type}>
+              <img src={item.image} alt="Nome do pokemon aqui" />
+            </Pokemon>
+            <Collapse skills={item.skills} />
           </div>
         ))}
       </Content>

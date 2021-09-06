@@ -34,11 +34,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     cursor: pointer;
   }
-
-  #root {
-    margin: 0 auto;
-    max-width: 768px;
-  }
 `;
 
 export default GlobalStyle;

@@ -1,33 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Btn, Content } from './styles';
 
 // import { Container } from './styles';
-
-interface PokemonProps {
-  collapsed?: string;
+interface CollapseProps {
+  skills: string[];
 }
 
-const Collapse: React.FC<PokemonProps> = ({
-  collapsed,
-  children,
-}) => {
-  const [isCollapsed, setIsCollapsed] =
-    React.useState(collapsed);
+const Collapse: React.FC<CollapseProps> = ({ skills }) => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
     <>
-      <button
-        className="collapse-button"
-        onClick={() => setIsCollapsed(isCollapsed)}
+      <Btn
+        isOpen={isCollapsed}
+        onClick={() => setIsCollapsed(!isCollapsed)}
       >
-        {isCollapsed ? 'Show' : 'Hide'} oioioioioi
-      </button>
-      <div
-        className={`collapse-content ${
-          isCollapsed ? 'collapsed' : 'expanded'
-        }`}
-      >
-        {children}
-      </div>
+        Pokemons <span>{isCollapsed ? '-' : '+'}</span>
+      </Btn>
+
+      {isCollapsed && (
+        <Content isOpen={isCollapsed}>
+          <ul>
+            {skills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </Content>
+      )}
     </>
   );
 };

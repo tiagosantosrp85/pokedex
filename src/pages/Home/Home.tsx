@@ -4,7 +4,6 @@ import { Cards } from '../../components';
 import { Container } from './styles';
 import { Search } from '../../components';
 import Types from '../../components/Types';
-import Collapse from '../../components/Collapse';
 
 const Home: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ const Home: React.FC = () => {
       <Cards />
       <Search />
       <Types />
-      <Collapse />
     </Container>
   );
 };

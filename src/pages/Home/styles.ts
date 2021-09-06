@@ -7,9 +7,6 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-position-x: 154px;
   background-position-y: -208px;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 12px;
 
   h1 {
     font-weight: 600;
