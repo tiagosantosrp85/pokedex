@@ -10,6 +10,8 @@ import SNORLAX from './snorlax.png';
 import SUICUNE from './Suicune.png';
 import BULBASAUR from './Bulbasaur.png';
 import CHARIZARD from './charizard.png';
+import Poke from './pokebola.png';
+import Fundo from './fundo.jpg';
 
 export {
   ALAKAZAN,
@@ -24,4 +26,6 @@ export {
   SUICUNE,
   BULBASAUR,
   CHARIZARD,
+  Poke,
+  Fundo,
 };

@@ -4,6 +4,7 @@ import { Cards } from '../../components';
 import { Container } from './styles';
 import { Search } from '../../components';
 import Types from '../../components/Types';
+import Walking from '../../components/walking';
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <Cards />
       <Search />
       <Types />
+      <Walking />
     </Container>
   );
 };
