@@ -15,6 +15,6 @@ export const Container = styled.div`
   }
 
   img:hover {
-    transform: translateX(800px);
+    transform: translateX(1100px);
   }
 `;

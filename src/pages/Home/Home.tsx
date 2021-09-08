@@ -13,7 +13,10 @@ const Home: React.FC = () => {
 
       <Cards />
       <Search />
+      <a href="/forms">forms</a>
+
       <Types />
+
       <Walking />
     </Container>
   );
