@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Input } from '../../components';
 import { Button } from '../../components';
+import { Navigation } from '../../components';
+
 import { BoxSent } from '../../components/Button/styles';
 
 const Forms: React.FC = () => {
@@ -22,6 +24,8 @@ const Forms: React.FC = () => {
 
   return (
     <>
+      <Navigation />
+
       <Input
         label="Nome"
         id="firstName"

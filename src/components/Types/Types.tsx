@@ -7,6 +7,7 @@ const Types: React.FC = () => {
   return (
     <Container>
       <h1>Escolha seu Pokemon</h1>
+
       <Content>
         {Pokemons.map(item => (
           <div key={item.id}>

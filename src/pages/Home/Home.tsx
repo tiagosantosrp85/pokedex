@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigation } from '../../components';
 import { Cards } from '../../components';
 
 import { Container } from './styles';
@@ -9,14 +10,13 @@ import Walking from '../../components/walking';
 const Home: React.FC = () => {
   return (
     <Container>
+      <Navigation />
+
       <h1>What Pokemon are you looking for?</h1>
 
       <Cards />
       <Search />
-      <a href="/forms">forms</a>
-
       <Types />
-
       <Walking />
     </Container>
   );
